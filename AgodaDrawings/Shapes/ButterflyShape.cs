@@ -14,7 +14,7 @@ namespace AgodaDrawings
             if (number % 2 == 1)
                  throw new ArgumentException("Argument should be even number only");
 
-            if (number >= Console.BufferWidth / (2 * Def_Drawing_Item.Length))
+            if (number >= output.BufferWidth / (2 * Def_Drawing_Item.Length))
                 throw new ArgumentException("Butterfly exceeds console window length");
         }
         public override void Print()
