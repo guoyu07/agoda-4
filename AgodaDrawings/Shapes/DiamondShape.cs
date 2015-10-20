@@ -13,7 +13,7 @@ namespace AgodaDrawings
             if (number % 2 == 0)
                 throw new ArgumentException("Argument should be odd number only");
 
-            if (number > Console.BufferWidth / Def_Drawing_Item.Length)
+            if (number > output.BufferWidth / Def_Drawing_Item.Length)
                 throw new ArgumentException("Diamond exceeds console window length");
 
             _sectorLenght = (number + 1) / 2;
